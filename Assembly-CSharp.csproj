@@ -61,7 +61,7 @@
     <Compile Include="Assets\Scripts\UI\Bag\Item.cs" />
     <Compile Include="Assets\Scripts\UI\Bag\BagMgr.cs" />
     <Compile Include="Assets\Scripts\Base\SingletonMono.cs" />
-    <Compile Include="Assets\Scripts\UI\NotificationPanel.cs" />
+    <Compile Include="Assets\Scripts\UI\UIMgr.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

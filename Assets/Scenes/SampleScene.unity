@@ -845,7 +845,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1485627731}
-  - component: {fileID: 1485627732}
+  - component: {fileID: 1485627730}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -853,6 +853,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1485627730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485627729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4cbb9249f6796e499b47a81e7d52e78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BaseCanves: {fileID: 1626066722}
+  _panel: {fileID: 681581399}
+  _text: {fileID: 1765493531}
 --- !u!4 &1485627731
 Transform:
   m_ObjectHideFlags: 0
@@ -867,21 +882,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1485627732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1485627729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dd073cd24deb1a4eaaaa803ec375f44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BaseCanves: {fileID: 1626066722}
-  _panel: {fileID: 681581399}
-  _text: {fileID: 1765493531}
 --- !u!1 &1626066722
 GameObject:
   m_ObjectHideFlags: 0

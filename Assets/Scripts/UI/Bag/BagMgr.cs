@@ -26,6 +26,7 @@ public class BagMgr : SingletonMono<BagMgr>
         var newObj = Instantiate(Instance.slot, Instance.Gird.transform);
         newObj.name = newObj.slotname=name;
         newObj.image.sprite = itemData.itemImage;
-        newObj.slotInfo = itemData.itemInfo;
+        newObj.slotInfo = newObj.textObj.GetComponent<Text>().text = itemData.itemInfo;
     }
+
 }

@@ -3,17 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NotificationPanel : SingletonMono<NotificationPanel>
+public class UIMgr : SingletonMono<UIMgr>
 {
     public GameObject BaseCanves;
 
     public GameObject _panel;
     public Text _text;
 
-    private void Start()
-    {
-        DontDestroyOnLoad(BaseCanves);
-    }
     public IEnumerator Showpanel(string showName)
     {
         if (_panel.activeInHierarchy)

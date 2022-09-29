@@ -15,7 +15,7 @@ public class Item : MonoBehaviour
         {
             BagMgr.Instance.AddItem(gameObject);
             Destroy(gameObject);
-            NotificationPanel.Instance.ShowPanel(name);
+            UIMgr.Instance.ShowPanel(name);
         }
     }
 
