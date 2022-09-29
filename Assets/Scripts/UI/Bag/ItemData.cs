@@ -7,7 +7,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Item")]
 public class ItemData : ScriptableObject
 {
-    public string itemName;
+    public string itemEnglishName;
+    public string itemChineseName;
     public Sprite itemImage;
     [TextArea]
     public string itemInfo;

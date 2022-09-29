@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5575aeb819b3c854981cd671a455f7da, type: 3}
   m_Name: Key
   m_EditorClassIdentifier: 
-  itemName: Key
+  itemEnglishName: Key
+  itemChineseName: "\u94A5\u5319"
   itemImage: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   itemInfo: "\u8FD9\u662F\u4E00\u628A\u94A5\u5319\u3002"

@@ -20,11 +20,11 @@ public class BagMgr : SingletonMono<BagMgr>
     public void AddItem(GameObject obj)
     {
         var itemData = obj.GetComponent<Item>().dataInfo;
-        var name = itemData.itemName;
+        var name = itemData.itemEnglishName;
         if(!itemDic.ContainsKey(name)) itemDic.Add(name, itemData);
 
         var newObj = Instantiate(Instance.slot, Instance.Gird.transform);
-        newObj.name = name;
+        newObj.name = newObj.slotname=name;
         newObj.image.sprite = itemData.itemImage;
         newObj.slotInfo = itemData.itemInfo;
     }

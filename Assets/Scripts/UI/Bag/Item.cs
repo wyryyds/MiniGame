@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 /// <summary>
 /// 可交互道具
 /// </summary>
@@ -14,6 +15,8 @@ public class Item : MonoBehaviour
         {
             BagMgr.Instance.AddItem(gameObject);
             Destroy(gameObject);
+            NotificationPanel.Instance.ShowPanel(name);
         }
     }
+
 }
