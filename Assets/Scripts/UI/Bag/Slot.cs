@@ -11,21 +11,24 @@ public class Slot : MonoBehaviour
     public Image image;
     [TextArea]public string slotInfo;
 
-    public GameObject textObj;
+    public GameObject InfoObj;
 
-    private void OnEnable()
+    private void Start()
     {
-        textObj = transform.Find("Text").gameObject;
-        textObj.SetActive(false);
+        InfoObj = GameObject.Find("ShowInfoPanel");
+        ShowInfo();
     }
-    private void OnMouseEnter()
+    public void OnMouseEnter()
     {
-        textObj.SetActive(true);
-        Debug.Log(1);
+        ShowInfo();
     }
-    private void OnMouseExit()
+    /// <summary>
+    /// 展示面板信息
+    /// </summary>
+    public void ShowInfo()
     {
-        textObj.SetActive(false);
-        Debug.Log(2);
+        InfoObj.transform.Find("ItemName").GetComponent<Text>().text = slotname;
+        InfoObj.transform.Find("Image").GetComponent<Image>().sprite = image.sprite;
+        InfoObj.transform.Find("Description").GetComponent<Text>().text = slotInfo;
     }
 }
